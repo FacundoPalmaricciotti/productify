@@ -1,0 +1,124 @@
+.dashboard {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff7eb3;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  color: #ff4081;
+}
+
+/* Formulario dentro de una tarjeta */
+.form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.product-form input, 
+.product-form select {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff7eb3;
+  border-radius: 10px;
+  outline: none;
+}
+
+.product-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4081;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.product-form button:hover {
+  background-color: #e91e63;
+}
+
+/* Tabla */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th, 
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #ff7eb3;
+  color: white;
+}
+
+/* Botón de volver arriba */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ff4081;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #ff4081;
+  color: white;
+}

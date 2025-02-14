@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "Facundo Palmaricciotti",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cros": "^1.0.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0",
+    "os": "^0.1.2"
+  }
+}
