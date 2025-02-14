@@ -1,0 +1,137 @@
+primero se deberia de crear un producto ya sea desde la pagina del frontend o desde mongodb compass la estructura de mongo db es esta:
+
+{
+  "_id": {
+    "$oid": "67aecd12395cac1ed8087f60"
+  },
+  "name": "Lavarropas",
+  "price": 450000,
+  "category": "Electronics",
+  "stock": 80
+}
+
+luego de que haya un producto desde la base de datos se puede seleccionar el icono de Clone document y ahi mismo pegar esto:
+[
+  {
+    "name": "Smartphone",
+    "price": 320000,
+    "category": "Electronics",
+    "stock": 50
+  },
+  {
+    "name": "Notebook Gamer",
+    "price": 950000,
+    "category": "Electronics",
+    "stock": 20
+  },
+  {
+    "name": "Auriculares Inalámbricos",
+    "price": 120000,
+    "category": "Electronics",
+    "stock": 100
+  },
+  {
+    "name": "Zapatillas Deportivas",
+    "price": 80000,
+    "category": "Clothing",
+    "stock": 150
+  },
+  {
+    "name": "Campera de Cuero",
+    "price": 200000,
+    "category": "Clothing",
+    "stock": 40
+  },
+  {
+    "name": "Jeans Slim Fit",
+    "price": 95000,
+    "category": "Clothing",
+    "stock": 80
+  },
+  {
+    "name": "Hamburguesa Doble",
+    "price": 5000,
+    "category": "Food",
+    "stock": 200
+  },
+  {
+    "name": "Pizza Napolitana",
+    "price": 10000,
+    "category": "Food",
+    "stock": 120
+  },
+  {
+    "name": "Cerveza Artesanal",
+    "price": 2500,
+    "category": "Food",
+    "stock": 300
+  },
+  {
+    "name": "Cámara de Seguridad",
+    "price": 180000,
+    "category": "Electronics",
+    "stock": 30
+  },
+  {
+    "name": "Monitor 4K",
+    "price": 400000,
+    "category": "Electronics",
+    "stock": 25
+  },
+  {
+    "name": "Microondas",
+    "price": 150000,
+    "category": "Electronics",
+    "stock": 60
+  },
+  {
+    "name": "Remera Oversize",
+    "price": 45000,
+    "category": "Clothing",
+    "stock": 100
+  },
+  {
+    "name": "Sweater de Lana",
+    "price": 120000,
+    "category": "Clothing",
+    "stock": 50
+  },
+  {
+    "name": "Helado de Chocolate",
+    "price": 4000,
+    "category": "Food",
+    "stock": 180
+  },
+  {
+    "name": "Galletas de Avena",
+    "price": 3000,
+    "category": "Food",
+    "stock": 250
+  },
+  {
+    "name": "Mochila Impermeable",
+    "price": 85000,
+    "category": "Other",
+    "stock": 70
+  },
+  {
+    "name": "Silla Gamer",
+    "price": 290000,
+    "category": "Other",
+    "stock": 35
+  },
+  {
+    "name": "Guitarra Acústica",
+    "price": 180000,
+    "category": "Other",
+    "stock": 40
+  },
+  {
+    "name": "Colchón Ortopédico",
+    "price": 420000,
+    "category": "Other",
+    "stock": 25
+  }
+]
+
+Asi hay productos cargados dentro de la base de datos y es mas dinamico de utilizar :D

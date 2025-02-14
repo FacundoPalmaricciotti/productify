@@ -1,8 +1,5 @@
 import mongoose from 'mongoose';
-/*
 
-*/
-// Definición del esquema de productos
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -14,7 +11,7 @@ const productSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: ['Electronics', 'Clothing', 'Food', 'Other'], // Categorías predefinidas
+        enum: ['Electronics', 'Clothing', 'Food', 'Other'],
         required: true
     },
     stock: {
@@ -27,7 +24,6 @@ const productSchema = new mongoose.Schema({
     versionKey: false
 });
 
-// Creación del modelo basado en el esquema
 const Product = mongoose.model('Product', productSchema);
 
 export { Product };

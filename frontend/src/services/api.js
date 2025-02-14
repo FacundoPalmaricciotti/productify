@@ -2,13 +2,12 @@ import axios from "axios";
 
 const BASE_URL_API = "http://localhost:3001/api/products";
 
-// Obtener todos los productos
 const getAllProducts = async () => {
     try {
         const response = await axios.get(BASE_URL_API);
         const products = response.data.map(product => ({
             ...product,
-            id: product._id // Convertimos _id en id
+            id: product._id 
         }));
         console.log("📡 Datos recibidos de la API:", products);
         return products;
@@ -18,7 +17,7 @@ const getAllProducts = async () => {
     }
 };
 
-// Crear un nuevo producto
+
 const createProduct = async (productData) => {
     try {
         const response = await axios.post(BASE_URL_API, productData);
@@ -29,7 +28,7 @@ const createProduct = async (productData) => {
     }
 };
 
-// Actualizar un producto
+
 const updateProduct = async (id, productData) => {
     try {
         const response = await axios.patch(`${BASE_URL_API}/${id}`, productData);
@@ -40,7 +39,7 @@ const updateProduct = async (id, productData) => {
     }
 };
 
-// Eliminar un producto
+
 const deleteProduct = async (id) => {
     if (!id) {
         console.error("❌ No se puede eliminar: ID indefinido.");

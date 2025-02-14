@@ -31,7 +31,7 @@ const Dashboard = () => {
   const handleChange = (e) => {
     let { name, value } = e.target;
     if (name === "stock") {
-      value = Math.max(0, Number(value)); // Evitar negativos
+      value = Math.max(0, Number(value)); 
     }
     setFormData({ ...formData, [name]: value });
   };
@@ -72,7 +72,6 @@ const Dashboard = () => {
       <div className="dashboard">
         <h2 className="dashboard-title">Panel de Administración</h2>
 
-        {/* Formulario envuelto en una card */}
         <div className="form-card">
           <form className="product-form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -92,7 +91,6 @@ const Dashboard = () => {
           </form>
         </div>
 
-         {/* Barra de búsqueda */}
          <div className="search-container">
           <input
             type="text"
@@ -104,7 +102,6 @@ const Dashboard = () => {
           <FaSearch className="search-icon" />
         </div>
 
-        {/* Tabla de productos */}
         <table className="product-table">
           <thead>
             <tr>
@@ -141,7 +138,6 @@ const Dashboard = () => {
           </tbody>
         </table>
 
-        {/* Botón de volver arriba */}
         {showScroll && (
           <button className="scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <FaArrowUp />

@@ -13,7 +13,7 @@
     overflow: hidden;
   }
   
-  /* Estilos del mensaje */
+  
   .content {
     z-index: 2;
     padding: 20px;
@@ -30,7 +30,7 @@
     margin-bottom: 20px;
   }
   
-  /* Botón de regreso */
+  
   .home-button {
     text-decoration: none;
     background: #ff9800;
@@ -47,7 +47,7 @@
     background: #ff5722;
   }
   
-  /* Animación de estrellas */
+  
   .stars, .stars2, .stars3 {
     position: absolute;
     width: 100%;
@@ -81,7 +81,7 @@
     }
   }
   
-  /* Animación de fade in */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
